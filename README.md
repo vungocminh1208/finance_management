@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# App Quản lý Chi tiêu Shopping
 
-This contains everything you need to run your app locally.
+Ứng dụng quản lý chi tiêu cá nhân được xây dựng bằng React, TypeScript và Vite.
 
-View your app in AI Studio: https://ai.studio/apps/drive/18MlwQVg8eUooHYtCoMu-p4-XUeYnMmAu
+## Tính năng chính
+- Quản lý danh mục theo màu sắc.
+- Lọc chi tiêu theo Tháng/Năm.
+- Tổng kết năm tự động.
+- Định dạng tiền tệ VND chuẩn.
 
-## Run Locally
+## Cách Deploy lên GitHub
 
-**Prerequisites:**  Node.js
+1. **Tạo Repository mới** trên GitHub của bạn.
+2. **Đẩy code lên**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/USER_CUA_BAN/TEN_REPO_CUA_BAN.git
+   git push -u origin main
+   ```
+3. **Kích hoạt GitHub Pages**:
+   - Vào tab **Settings** của Repository trên GitHub.
+   - Chọn mục **Pages** ở menu bên trái.
+   - Ở phần **Build and deployment > Source**, chọn **GitHub Actions**.
+4. **Chờ đợi**:
+   - Tab **Actions** sẽ chạy workflow "Deploy to GitHub Pages". 
+   - Sau khoảng 1-2 phút, ứng dụng của bạn sẽ được online tại: `https://USER_CUA_BAN.github.io/TEN_REPO_CUA_BAN/`
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Phát triển cục bộ
+```bash
+npm install
+npm run dev
+```
