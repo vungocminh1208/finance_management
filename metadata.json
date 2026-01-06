@@ -1,0 +1,5 @@
+{
+  "name": "App Quản lý chi tiêu",
+  "description": "A comprehensive React application for managing shopping categories and expenses with color-coded organization and VND currency formatting.",
+  "requestFramePermissions": []
+}
